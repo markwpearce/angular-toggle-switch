@@ -1,4 +1,4 @@
-angular.module('toggle-switch', ['ng', 'ngSanitize']).directive('toggleSwitch', [ '$compile', function ($compile) {
+angular.module('toggle-switch', ['ngSanitize']).directive('toggleSwitch', [ '$compile', function ($compile) {
   return {
     restrict: 'EA',
     replace: true,
