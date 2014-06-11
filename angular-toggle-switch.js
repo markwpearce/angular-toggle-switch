@@ -12,10 +12,10 @@ angular.module('toggle-switch', ['ng', 'ngSanitize']).directive('toggleSwitch', 
     },
     template: '<div class="switch" ng-click="toggle()" ng-class="{ \'disabled\': disabled }">' +
       '</div>',
-    controller: function($scope) {
-      $scope.toggle = function toggle() {
-        if(!$scope.disabled) {
-          $scope.model = !$scope.model;
+    controller: function(scope) {
+      scope.toggle = function toggle() {
+        if(!scope.disabled) {
+          scope.model = !scope.model;
         }
       };
     },
